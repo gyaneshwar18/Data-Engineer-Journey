@@ -30,3 +30,37 @@ if __name__ == "__main__":
     print("Max:", results["max"])
     print("Even Count:", results["even_count"])
     print("Odd Count:", results["odd_count"])
+
+
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n-1)
+
+# print(factorial(5))  # 120
+
+
+# def gcd(a, b):
+#     while b:
+#         a, b = b, a % b
+#     return a
+
+# print(gcd(48, 18))  # 6
+
+
+
+# def Calculator(a,b,op):
+    
+#     try:
+#         if op == '+':
+#             return a + b
+#         elif op == '-':
+#             return a - b
+#         elif op == '*':
+#             return a * b
+#         elif op == '/':
+#             return a / b
+#     except ZeroDivisionError:
+#             return "cannot divide by zero"
+    
+# print(Calculator(2,5,'+'))
