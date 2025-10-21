@@ -8,7 +8,7 @@ def word_counter(text):
     
     frequency={}
     for w in word:
-        w=w.lower().strip(",.!?")   
+        w=w.lower().strip(",.!?")    
          # frequency[w]=frequency.get(w,0)+1  
         if w not in frequency:   
             frequency[w]=0
