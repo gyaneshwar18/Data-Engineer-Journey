@@ -6,10 +6,9 @@ from datetime import datetime
 
 # ---------- SETTINGS ----------
 BASE_DIR = Path("sample_files")
-TARGET_DIR = Path("organized_files")
+TARGET_DIR = Path("organized_files") 
 LOG_FILE = Path("logs/file_log.txt")
-
-
+LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 # ---------- LOGGING CONFIG ----------
 logging.basicConfig(
     filename=LOG_FILE,
@@ -32,3 +31,16 @@ def organize_files():
             destination = folder / file.name
             shutil.move(str(file), str(destination))
             logging.info(f"Moved {file.name} → {folder}")
+
+def main():
+    start = datetime.now()
+    logging.info("File organization started")
+
+    organize_files()
+
+    logging.info("File organization completed")
+    end = datetime.now()
+    print(f" Task completed in {end - start}")
+
+if __name__ == "__main__":
+    main()
