@@ -1,0 +1,5 @@
+2025-11-24 22:42:16,990 | INFO | File organization started
+2025-11-24 22:42:17,013 | INFO | Moved data1.csv \u2192 organized_files\CSV
+2025-11-24 22:42:17,027 | INFO | Moved photo1.png \u2192 organized_files\PNG
+2025-11-24 22:42:17,041 | INFO | Moved report1.pdf \u2192 organized_files\PDF
+2025-11-24 22:42:17,043 | INFO | File organization completed
