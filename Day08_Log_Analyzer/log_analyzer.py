@@ -22,3 +22,18 @@ df = pd.DataFrame(data, columns=["timestamp", "level", "filename", "folder"])
 
 print("Extracted Log Data:")
 print(df, "\n")
+
+# Convert timestamp to datetime
+df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
+
+# Count how many files moved per folder
+count_per_folder = df["folder"].value_counts()
+
+print("Files Moved Per Folder:")
+print(count_per_folder, "\n")
+
+# Save output
+df.to_csv("parsed_log.csv", index=False)
+count_per_folder.to_csv("folder_counts.csv", header=["count"])
+
+print("Logs parsed and saved successfully!")
