@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Riya",
+      "scores": { "math": 88, "science": 92, "english": 79 }
+    },
+    {
+      "id": 2,
+      "name": "Aryan",
+      "scores": { "math": 75, "science": 85, "english": 80 }
+    },
+    {
+      "id": 3,
+      "name": "Sneha",
+      "scores": { "math": 90, "science": 94, "english": 95 }
+    }
+  ]
+}
