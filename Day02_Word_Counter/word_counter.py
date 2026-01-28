@@ -15,9 +15,9 @@ def word_counter(text):
         frequency[w]+=1
     return char_len, word_len,frequency
 
-if __name__=="__main__":
-    text=input("Enter name: ")
-    word_len, char_len,frequency=word_counter(text)
-    print(f"\nTotal words:{word_len}")
-    print(f"\nCharacter length:{char_len}")
-    print(frequency)
+# if __name__=="__main__":
+#     text=input("Enter name: ")
+#     word_len, char_len,frequency=word_counter(text)
+#     print(f"\nTotal words:{word_len}")
+#     print(f"\nCharacter length:{char_len}")
+#     print(frequency)

@@ -22,14 +22,15 @@ def number_cruncher(numbers):
 if __name__ == "__main__":
     nums = [10, 21, 32, 43, 54, 65]  # you can change this list
     results = number_cruncher(nums)
+    print(results)
 
-    print("Input Numbers:", results["numbers"])
-    print("Sum:", results["sum"])
-    print("Average:", results["average"])
-    print("Min:", results["min"])
-    print("Max:", results["max"])
-    print("Even Count:", results["even_count"])
-    print("Odd Count:", results["odd_count"])
+    # print("Input Numbers:", results["numbers"])
+    # print("Sum:", results["sum"])
+    # print("Average:", results["average"])
+    # print("Min:", results["min"])
+    # print("Max:", results["max"])
+    # print("Even Count:", results["even_count"])
+    # print("Odd Count:", results["odd_count"])
 
 
 # def factorial(n):
