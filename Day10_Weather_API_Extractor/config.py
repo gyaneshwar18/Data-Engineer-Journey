@@ -1,0 +1,2 @@
+API_KEY = "3f043087d56e18752cca4f893c54e733"E
+CITY = "Hyderabad"
