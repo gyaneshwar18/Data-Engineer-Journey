@@ -17,4 +17,8 @@ p.org/api
 - API calls using requests
 - JSON parsing
 - Batch data ingestion
-- Separation of config and code
+- Separation of config and code                                              
+
+
+
+   

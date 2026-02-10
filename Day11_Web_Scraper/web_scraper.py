@@ -16,7 +16,7 @@ def parse_books(html):
     for book in soup.select('article.product_pod'):
         title=book.h3.a['title']
         price=book.select_one('p.price_color').text
-        rating=book.p['class'][1]  # Get the second class which indicates the 
+        rating=book.p['class'][1]  # Get the second class which indicates the rating
         books.append({'Title': title, 'Price': price, 'Rating': rating})
     return books
 
@@ -35,6 +35,5 @@ def main():
 
     print("saving to CSV...")
     save_csv(books)
-    
 if __name__=="__main__":    
     main()
