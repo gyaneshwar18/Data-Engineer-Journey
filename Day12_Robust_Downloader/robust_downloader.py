@@ -40,7 +40,6 @@ def download_with_retry(url, retries=MAX_RETRIES):
         except requests.exceptions.HTTPError as e:
             logging.error(f"HTTP error occurred for {url}: {e}")
             break
-
         except requests.exceptions.RequestException as e:
             logging.error(f"Request error occurred for {url}: {e}")
     

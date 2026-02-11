@@ -25,6 +25,7 @@ class StudentETLPipeline:
         # aggregate
         self.df = (
             self.df
+                 
             .groupby("name")["marks"]
             .mean()
             .reset_index(name="avg_marks")
