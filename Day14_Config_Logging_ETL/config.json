@@ -1,0 +1,5 @@
+{
+  "input_path": "input.csv",
+  "output_path": "output.csv",
+  "log_file": "logs/etl.log"
+}

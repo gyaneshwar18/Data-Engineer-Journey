@@ -1,0 +1,8 @@
+2026-02-12 21:28:16,647 | INFO | Pipeline started
+2026-02-12 21:28:16,647 | INFO | Extract stage started
+2026-02-12 21:28:16,673 | INFO | Loaded 5 rows
+2026-02-12 21:28:16,673 | INFO | Transform stage started
+2026-02-12 21:28:16,689 | INFO | Aggregation complete
+2026-02-12 21:28:16,702 | INFO | Load stage started
+2026-02-12 21:28:16,702 | INFO | Saved output to output.csv
+2026-02-12 21:28:16,712 | INFO | Pipeline completed successfully
