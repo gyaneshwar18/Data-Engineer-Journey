@@ -39,27 +39,7 @@ Instead of writing loose scripts, this project structures the data workflow usin
 
 ---
 
-## 📂 Project Structure
 
-Day13_OOP_ETL/
-│
-├── etl_pipeline.py
-├── input.csv
-├── output.csv
-└── README.md
-
----
-
-## 📄 Sample Input (input.csv)
-
-name,marks
-Riya,88
-Aryan,75
-Sneha,92
-Riya,90
-Aryan,85
-
----
 
 ## ▶️ How to Run
 
@@ -102,13 +82,5 @@ This mirrors real-world pipeline frameworks like Airflow operators and ETL job c
 
 ---
 
-## 💬 Interview Explanation (Short Version)
 
-This project demonstrates a class-based ETL pipeline where extract, transform, and load are implemented as methods. The pipeline is configurable via constructor parameters and executed through a run() orchestrator method, following production ETL design patterns.
 
----
-
-## 🚀 Next Step
-
-Day 14 → Logging + Configurable Pipelines  
-(Add logging, config files, and environment separation to make this production-grade.)
