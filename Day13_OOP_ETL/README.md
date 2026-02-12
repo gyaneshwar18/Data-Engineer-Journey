@@ -95,7 +95,7 @@ Using classes makes pipelines:
 Each ETL stage is a method:
 - extract()
 - transform()
-- load()
+- load()b 
 - run()
 
 This mirrors real-world pipeline frameworks like Airflow operators and ETL job classes.
