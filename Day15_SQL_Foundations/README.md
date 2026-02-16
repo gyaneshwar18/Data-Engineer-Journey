@@ -1,4 +1,4 @@
-# Day 15 — SQL Foundations (SELECT, WHERE, ORDER BY)
+#  SQL Foundations (SELECT, WHERE, ORDER BY)
 
 ## 📌 Objective
 Learn and practice foundational SQL queries used in data engineering and analytics workflows.  
