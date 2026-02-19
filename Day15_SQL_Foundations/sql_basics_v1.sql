@@ -22,3 +22,5 @@ WHERE salary > 60000;
 SELECT *
 FROM employees
 ORDER BY salary DESC;
+
+
