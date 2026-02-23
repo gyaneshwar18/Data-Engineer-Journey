@@ -75,4 +75,27 @@ GROUP BY c.name;
 
 
 
+---- 6️⃣ Customers with more than 1 order
 
+
+select c.name
+from customers c 
+join orders o
+on c.customer_id=o.customer_id
+Group BY c.name
+having Count(o.order_id) >1
+
+-- 7️⃣ Highest spending customer
+SELECT customer_id,
+       SUM(amount) AS total_spend
+FROM orders
+GROUP BY customer_id
+ORDER BY total_spend DESC
+LIMIT 1;
+
+
+-- 8️⃣ Count customers per city
+SELECT city,
+       COUNT(*) AS total_customers
+FROM customers
+GROUP BY city;
