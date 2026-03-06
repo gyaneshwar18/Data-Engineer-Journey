@@ -1,18 +1,25 @@
+from datetime import datetime
+
+VALID_STATUS = ["completed", "pending", "cancelled"]
+
 def validate_record(row):
 
-    if row["customer_id"].strip() == "":
-        return "customer_id missing"
+    if not row["customer_id"]:
+        return "Missing customer_id"
 
-    if not row["customer_id"].isdigit():
-        return "customer_id invalid"
+    try:
+        amount = float(row["amount"])
+        if amount <= 0:
+            return "Invalid amount"
+    except:
+        return "Amount not numeric"
 
-    if row["amount"].strip() == "":
-        return "amount missing"
+    try:
+        datetime.strptime(row["order_date"], "%Y-%m-%d")
+    except:
+        return "Invalid date format"
 
-    if float(row["amount"]) <= 0:
-        return "invalid amount"
-
-    if row["status"] not in ["completed","pending","cancelled"]:
-        return "invalid status"
+    if row["status"] not in VALID_STATUS:
+        return "Invalid status"
 
     return None

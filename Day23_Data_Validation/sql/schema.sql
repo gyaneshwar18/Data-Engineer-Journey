@@ -1,7 +1,7 @@
-CREATE TABLE IF NOT EXISTS orders (
-    order_id SERIAL PRIMARY KEY,
-    customer_id INT NOT NULL,
-    order_date DATE NOT NULL,
-    amount NUMERIC(10,2) NOT NULL,
-    status VARCHAR(20) NOT NULL
+CREATE TABLE IF NOT EXISTS rejected_orders (
+    customer_id TEXT,
+    order_date TEXT,
+    amount TEXT,
+    status TEXT,
+    reason TEXT
 );
