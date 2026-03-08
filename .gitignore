@@ -6,7 +6,7 @@ venv/
 __pycache__/
 *.pyc
 
-# Environment variables
+# Environment variables  
 .env
 
 # Jupyter checkpoints
