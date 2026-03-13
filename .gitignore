@@ -6,8 +6,16 @@ venv/
 __pycache__/
 *.pyc
 
-# Environment variables  
+# Environment variables
 .env
+**/.env
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Logs
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
