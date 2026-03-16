@@ -43,5 +43,6 @@ def run_pipeline():
 
     cursor.close()
     conn.close()
+    
 if __name__ == "__main__":
     run_pipeline()
