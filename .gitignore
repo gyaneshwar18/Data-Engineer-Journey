@@ -1,21 +1,73 @@
-# Virtual Environment
+# ------------------------------
+# 🔹 Virtual Environments
+# ------------------------------
 .venv/
 venv/
+env/
+airflow_env/
 
-# Python cache
+# ------------------------------
+# 🔹 Python Cache
+# ------------------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Environment variables
+# ------------------------------
+# 🔹 Environment Variables
+# ------------------------------
 .env
+.env.*
 **/.env
 
-# Jupyter checkpoints
+# ------------------------------
+# 🔹 Logs
+# ------------------------------
+logs/
+*.log
+
+# ------------------------------
+# 🔹 Airflow
+# ------------------------------
+airflow/
+airflow/logs/
+airflow/*.db
+
+# ------------------------------
+# 🔹 Jupyter
+# ------------------------------
 .ipynb_checkpoints/
 
-# Logs
-logs/*.log
-
-# OS files
+# ------------------------------
+# 🔹 OS Files
+# ------------------------------
 .DS_Store
 Thumbs.db
+
+# ------------------------------
+# 🔹 VS Code / IDE
+# ------------------------------
+.vscode/
+.idea/
+
+# ------------------------------
+# 🔹 Temporary / Misc
+# ------------------------------
+*.tmp
+*.bak
+*.swp
+
+# ------------------------------
+# 🔹 Build / Distribution
+# ------------------------------
+dist/
+build/
+*.egg-info/
+
+# ------------------------------
+# 🔹 Test / Coverage
+# ------------------------------
+.coverage
+htmlcov/
+.pytest_cache/

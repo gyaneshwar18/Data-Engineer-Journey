@@ -1,8 +1,0 @@
-2026-03-19 14:13:39,411 - INFO - Pipeline started
-2026-03-19 14:13:39,554 - ERROR - Pipeline failed: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
-
-2026-03-19 14:13:39,554 - INFO - Pipeline completed in 0.14 seconds
-2026-03-19 14:14:27,289 - INFO - Pipeline started
-2026-03-19 14:14:27,446 - INFO - Database connection established
-2026-03-19 14:14:27,518 - INFO - Total records in orders table: 13
-2026-03-19 14:14:27,534 - INFO - Pipeline completed in 0.23 seconds
