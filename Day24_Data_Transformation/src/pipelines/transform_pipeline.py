@@ -12,7 +12,7 @@ def run_transformation():
     logging.info("Starting transformation pipeline")
 
     connector = PostgresConnector()
-    conn = connector.connect()
+    conn = connector.connect()  
     cursor = conn.cursor()
 
     logging.info("Database connection established")

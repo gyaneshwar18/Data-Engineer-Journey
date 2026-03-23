@@ -4,7 +4,7 @@ def run_pipeline():
 
     connector = PostgresConnector()
     conn = connector.connect()
-    cursor = conn.cursor()
+    cursor = conn.cursor() 
 
     with open("sql/schema.sql") as f:
         cursor.execute(f.read())
