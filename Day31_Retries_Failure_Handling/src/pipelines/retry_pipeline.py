@@ -1,0 +1,15 @@
+attempt = 0
+
+
+def unstable_task():
+    global attempt
+
+    attempt += 1
+
+    print(f"Attempt Number: {attempt}")
+
+    # Fail first 2 times
+    if attempt < 3:
+        raise Exception("Simulated Failure!")
+
+    print("Task succeeded on retry!")
