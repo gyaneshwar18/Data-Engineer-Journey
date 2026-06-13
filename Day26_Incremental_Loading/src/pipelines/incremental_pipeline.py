@@ -8,7 +8,7 @@ def get_last_loaded_id():
 
 
 def update_last_loaded_id(new_id):
-
+ 
     with open("metadata/last_loaded_id.txt", "w") as f:
         f.write(str(new_id))
 
