@@ -9,6 +9,7 @@ while l<r:
     l+=1
     r-=1
 
-print("".join(chars))
+
+print(s=="".join(chars))
 
 

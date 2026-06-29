@@ -9,7 +9,7 @@
 #     freq[num] = freq.get(num, 0) + 1
 
 # for value in freq.values():
-#     if value > 1:
+#     if value > 1: 
 #         print(True)
 #         break
 # else:
@@ -32,3 +32,6 @@ for num in nums:
 
 else:
     print(False)
+
+
+
