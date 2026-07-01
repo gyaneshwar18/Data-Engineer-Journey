@@ -2,9 +2,10 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 import sys
+from pathlib import Path
 
 # connect your pipeline
-sys.path.append('/home/gyaneshwar/Data-Engineer-Journey/Day28_Airflow_Basics/src')
+sys.path.append(str(Path(__file__).resolve().parent / 'src'))
 
 from pipelines.etl_pipeline import run_pipeline
 
