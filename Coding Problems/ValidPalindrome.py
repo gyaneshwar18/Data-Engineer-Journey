@@ -11,7 +11,7 @@ while l<r:
     while l<r and not s[r].isalnum():
         r-=1
 
-    while s[l].lower()!=s[r].lower()
+    while s[l].lower()!=s[r].lower():
         print(False)
         break
 
