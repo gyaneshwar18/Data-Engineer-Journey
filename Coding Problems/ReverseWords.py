@@ -1,5 +1,5 @@
 n=input()
-ar=list(map(input().split()))
+ar=map(input().split())
 
 l=0
 r=n-1

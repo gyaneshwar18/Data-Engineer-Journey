@@ -7,7 +7,7 @@ sys.path.append(
     '/home/gyaneshwar/Data-Engineer-Journey/Day31_Retries_Failure_Handling/src'
 )
 
-from pipelines.retry_pipeline import unstable_task
+from src.pipelines.retry_pipeline import unstable_task
 
 
 default_args = {
