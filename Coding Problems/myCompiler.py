@@ -1,10 +1,22 @@
-n = int(input())
-ar = list(map(int, input().split()))
+s= input()
+t= input()
 
-max_ele = ar[0]
 
-for i in ar:
-    if i > max_ele:
-        max_ele = i
+freq1={}
+freq2={}
+for ch in s:
 
-print(max_ele)
+    if ch in freq1:
+        freq1[ch]+=1
+    else:
+        freq1[ch]=1 
+
+for ch in t:
+
+    if ch in freq2:
+        freq2[ch]+=1
+    else:
+        freq2[ch]=1 
+
+
+print(freq1==freq2)
