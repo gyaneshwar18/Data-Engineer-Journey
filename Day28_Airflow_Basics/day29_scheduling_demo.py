@@ -32,7 +32,7 @@ with DAG(
 # -------------------------------
 # 2️⃣ EVERY 5 MINUTES
 # -------------------------------
-with DAG(
+with DAG( 
     dag_id='day29_every_5_min',
     start_date=datetime(2024, 1, 1),
     schedule='*/5 * * * *',

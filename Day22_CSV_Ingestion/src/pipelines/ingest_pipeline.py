@@ -4,8 +4,7 @@ from src.utils.logger import logging
 
 
 def ingest_with_copy(file_path):
-    connector = PostgresConnector()
-    conn = connector.connect()
+     
     cursor = conn.cursor()
 
     try:
