@@ -1,0 +1,123 @@
+from utils.spark_session import  create_spark_session
+from pyspark.sql import Row
+
+# create Spark Session
+
+spark=create_spark_session("Day67_Schema")
+
+
+# Delta Table Path
+
+delta_path="output/delta/day62_sales"
+
+# Read Exisiting Delta Table 
+
+delta_df=(
+	spark.read	
+	.format("delta")
+	.load(dleta_path)
+)
+
+print("CURRENT TABLE")
+delta_df.show()
+
+
+delta_df.printSchema()
+
+
+# Create Compatible Data
+
+compatible_data= spark.createDataFrame([
+	Row(
+		order_id=2000,
+		customer="Schema_Test",
+		city="Hyderabad"
+		amount=5000
+	)
+])
+
+compatible_data.show()
+
+# Append data
+
+compatible_data.write.format("delta").mode("append").save(delta_path)
+
+print("inserted compatible data")
+
+
+# create New Column
+
+new_column_data=spark.createDataFrame([
+	Row(
+		order_id=2001,
+		customer="Evolution_Test",
+		city="Hyderabad",
+		amount=6000,
+		discount=500
+	)
+])
+
+
+new_column_data.show()
+new_column_data.printSchema()
+
+# Schema Evolution
+
+new_column_data.write.format("delta").mode("write").option("mergeSchema",")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
