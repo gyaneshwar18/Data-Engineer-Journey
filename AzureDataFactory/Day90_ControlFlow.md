@@ -419,6 +419,6 @@ When Lookup retrieves multiple configuration records, such as a list of tables o
  Added Copy Activity to the True branch.
  Added Fail Activity to the False branch.
  Created a ForEach pipeline with an array parameter.
- Used @item() to pass a filename dynamically.
+ Used @item() to pass a filename dynamically. 
  Verified the run results where execution succeeded.
- Can explain when to use each of the four activities.
+ Can explain when to use each of the four activities. 

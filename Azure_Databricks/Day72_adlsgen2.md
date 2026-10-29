@@ -14,7 +14,7 @@ Your setup:
 2. Understand the architecture
 Source files — CSV / JSON / API
 ADLS Gen2 — datalakegyan/source
-
+chat
 Azure Databricks + PySpark
 Transformed data
 

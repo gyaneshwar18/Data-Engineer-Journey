@@ -1,4 +1,5 @@
 Day 71 — DBFS + File Handling
+
 1. What is DBFS?
 DBFS (Databricks File System) is a filesystem interface historically used to access files in Databricks.
 Why do we use it?

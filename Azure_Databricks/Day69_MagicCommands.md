@@ -649,7 +649,7 @@ Databricks Notebook
         ├── PySpark transformations
         │
         ├── SQL transformations
-        │s
+        │
         ├── Write Delta table
         │
         └── Validate output

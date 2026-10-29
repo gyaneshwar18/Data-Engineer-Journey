@@ -1,5 +1,5 @@
 Your Existing Setup
-Component	Name
+Component	Name   
 Storage account	datalakegyan
 Container	source
 Access Connector	ac-databricks-learning
